@@ -10,8 +10,6 @@
   "dependencies": {
     "contentful": "^4.4.3",
     "jquery": "3.2.1",
-    "marked": "^0.3.6",
-    "moment": "^2.18.1",
     "node-sass-chokidar": "0.0.3",
     "normalize.css": "7.0.0",
     "react": "^15.5.4",
