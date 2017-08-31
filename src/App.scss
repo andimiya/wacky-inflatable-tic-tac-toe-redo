@@ -143,3 +143,8 @@ body {
     animation: wiggle 0.2s ease infinite;
   }
 }
+
+.game-container-inner {
+  display: flex;
+  justify-content: center;
+}

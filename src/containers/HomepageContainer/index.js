@@ -1,7 +1,4 @@
 import React from 'react';
-import PageHeader from '../../components/PageHeader';
-import PageHeaderSubText from '../../components/PageHeaderSubText';
-import PageIntroText from '../../components/PageIntroText';
 import { Link } from 'react-router-dom';
 
 import title from '../../assets/title.png';

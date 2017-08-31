@@ -1,22 +1,28 @@
 import React from 'react';
-import PageHeader from '../../components/PageHeader';
-import PageHeaderSubText from '../../components/PageHeaderSubText';
-import PageIntroText from '../../components/PageIntroText';
-import AboutUsBody from '../../components/AboutUsBody';
+import Grid from '../../assets/grid.png';
+import ChatBox from '../../components/ChatBox';
+import SmallPlayer1 from '../../assets/small-player1.png';
 
-const GameContainer = () => {
-  return (
-    <div className="about-us-container outer">
-      <div className="header-container-outer">
-        <div className="header-container div-container">
-          <PageHeader title="About Us" />
-          <PageHeaderSubText text="We love football and believe that fantasy sports decisions should be based off of data, not intuition." />
-          <PageIntroText text="Get to know us. Now." />
+class GameContainer extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="game-container outer">
+        <div className="game-container-inner">
+          <div className="sidebar-container">
+            <img src={SmallPlayer1} />
+            <ChatBox />
+          </div>
+          <div className="grid-container">
+            <img src={Grid} />
+          </div>
         </div>
       </div>
-      <AboutUsBody />
-    </div>
-  );
+    );
+  }
 };
 
 export default GameContainer;
