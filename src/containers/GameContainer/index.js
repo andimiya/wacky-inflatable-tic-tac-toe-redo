@@ -13,11 +13,11 @@ class GameContainer extends React.Component {
       <div className="game-container outer">
         <div className="game-container-inner">
           <div className="sidebar-container">
-            <img src={SmallPlayer1} />
+            <img src={SmallPlayer1} alt="Small player 1 image" />
             <ChatBox />
           </div>
           <div className="grid-container">
-            <img src={Grid} />
+            <img src={Grid} alt="Grid container lines"/>
           </div>
         </div>
       </div>
