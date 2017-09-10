@@ -11,6 +11,30 @@ const GameBoard = props => {
           <div className="cell-1">
             <button onClick={props.click} name='upper-left'>Z</button>
           </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='upper-mid'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='upper-right'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='mid-left'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='mid-mid'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='mid-right'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='bottom-left'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='bottom-mid'>Z</button>
+          </div>
+          <div className="cell-1">
+            <button onClick={props.click} name='bottom-right'>Z</button>
+          </div>
         </div>
       </div>
     </div>

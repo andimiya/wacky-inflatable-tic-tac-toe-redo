@@ -33,6 +33,11 @@
 body {
   background-color: #CA661A; }
 
+.gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px; }
+
 .title-container {
   margin-top: 5%; }
   .title-container img {

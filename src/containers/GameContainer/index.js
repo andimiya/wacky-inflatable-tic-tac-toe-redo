@@ -4,23 +4,49 @@ import GameBoard from '../../components/GameBoard';
 import SmallPlayer1 from '../../assets/small-player1.png';
 
 class GameContainer extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
-      player1: [],
-      player2: [],
+      currentTurn: 1,
+      upperLeft: null,
+      upperMid: null,
+      upperRight: null,
+      midLeft: null,
+      midMid: null,
+      midRight: null,
+      bottomLeft: null,
+      bottomMid: null,
+      bottomRight: null
     };
 
     this.clickSelection = this.clickSelection.bind(this);
+    this.switchPlayer = this.switchPlayer.bind(this);
+  }
+
+  switchPlayer() {
+    console.log('switchPlayer');
   }
 
   clickSelection(e) {
+    let player = 'player1';
+
     console.log('click');
     switch(e.target.name) {
       case 'upper-left':
         this.setState ({
-          player1: [1, 0, 0, 0, 0, 0, 0, 0, 0],
-          player2: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          upperLeft: {player}
+        });
+        this.switchPlayer();
+        break;
+      case 'upper-mid':
+        this.setState ({
+          upperMid: {player}
+        });
+        break;
+      case 'upper-right':
+        this.setState ({
+          upperRight: {player}
         });
         break;
     }
@@ -35,9 +61,9 @@ class GameContainer extends Component {
             <img src={SmallPlayer1} alt="Small player 1 image" />
             <ChatBox />
             <GameBoard
-              click={this.clickSelection} />
+              click={this.clickSelection}
+              player={this.playerTurn} />
           </div>
-
         </div>
       </div>
     );
