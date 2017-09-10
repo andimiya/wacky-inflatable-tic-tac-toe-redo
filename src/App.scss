@@ -1,7 +1,6 @@
 $small-width: 425px;
 $medium-width: 650px;
 $large-width: 1024px;
-$grass-img: url('./assets/banner-grass.png');
 
 @mixin small {
   @media (min-width: #{$small-width}) {
@@ -147,4 +146,8 @@ body {
 .game-container-inner {
   display: flex;
   justify-content: center;
+}
+
+.sidebar-container {
+
 }
